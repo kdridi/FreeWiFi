@@ -1,0 +1,27 @@
+{
+  "name": "freewifi-auth",
+  "version": "1.0.0",
+  "description": "CLI that connects to FreeWiFi hotspot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "$(npm bin)/babel -- index.js > freewifi.js"
+  },
+  "bin": {
+    "freewifi": "./freewifi.js"
+  },
+  "keywords": [
+    "FreeWiFi"
+  ],
+  "author": "Karim DRIDI",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^5.8.29"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.1.19",
+    "cheerio": "^0.19.0",
+    "minimist": "^1.2.0",
+    "request-promise": "^1.0.2"
+  }
+}
